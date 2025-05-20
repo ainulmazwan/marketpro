@@ -83,94 +83,22 @@
       <div class="container">
         <h2 class="text-center mb-5">Meet Our Team</h2>
         <div class="row g-4">
-          <div class="col-md-3">
-            <div class="card text-center border-0">
-              <img
-                src="https://placehold.co/200x200"
-                class="card-img-top rounded-circle mx-auto"
-                style="width: 150px"
-                alt="Team Member"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Sarah Johnson</h5>
-                <p class="text-muted">CEO & Founder</p>
-                <div class="social-links">
-                  <a href="#" class="text-muted me-2"
-                    ><i class="bi bi-linkedin"></i
-                  ></a>
-                  <a href="#" class="text-muted"
-                    ><i class="bi bi-twitter"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-center border-0">
-              <img
-                src="https://placehold.co/200x200"
-                class="card-img-top rounded-circle mx-auto"
-                style="width: 150px"
-                alt="Team Member"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Mike Wilson</h5>
-                <p class="text-muted">Creative Director</p>
-                <div class="social-links">
-                  <a href="#" class="text-muted me-2"
-                    ><i class="bi bi-linkedin"></i
-                  ></a>
-                  <a href="#" class="text-muted"
-                    ><i class="bi bi-twitter"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-center border-0">
-              <img
-                src="https://placehold.co/200x200"
-                class="card-img-top rounded-circle mx-auto"
-                style="width: 150px"
-                alt="Team Member"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Emily Chen</h5>
-                <p class="text-muted">Head of SEO</p>
-                <div class="social-links">
-                  <a href="#" class="text-muted me-2"
-                    ><i class="bi bi-linkedin"></i
-                  ></a>
-                  <a href="#" class="text-muted"
-                    ><i class="bi bi-twitter"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-center border-0">
-              <img
-                src="https://placehold.co/200x200"
-                class="card-img-top rounded-circle mx-auto"
-                style="width: 150px"
-                alt="Team Member"
-              />
-              <div class="card-body">
-                <h5 class="card-title">David Brown</h5>
-                <p class="text-muted">PPC Specialist</p>
-                <div class="social-links">
-                  <a href="#" class="text-muted me-2"
-                    ><i class="bi bi-linkedin"></i
-                  ></a>
-                  <a href="#" class="text-muted"
-                    ><i class="bi bi-twitter"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          @include("layouts.parts.team", [
+            "name" => "Sarah Johnson",
+            "position" => "CEO & Founder"
+          ])
+          @include("layouts.parts.team", [
+            "name" => "Mike Wilson",
+            "position" => "Creative Director"
+          ])
+          @include("layouts.parts.team", [
+            "name" => "Emily Chen",
+            "position" => "Head of SEO"
+          ])
+          @include("layouts.parts.team", [
+            "name" => "David Brown",
+            "position" => "PPC"
+          ])
         </div>
       </div>
     </section>
@@ -180,34 +108,26 @@
       <div class="container">
         <h2 class="text-center mb-5">Our Achievements</h2>
         <div class="row text-center">
-          <div class="col-md-3">
-            <div class="achievement">
-              <i class="bi bi-trophy display-4 text-primary"></i>
-              <h3 class="mt-3">500+</h3>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="achievement">
-              <i class="bi bi-graph-up display-4 text-primary"></i>
-              <h3 class="mt-3">150%</h3>
-              <p>Average ROI</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="achievement">
-              <i class="bi bi-award display-4 text-primary"></i>
-              <h3 class="mt-3">25+</h3>
-              <p>Industry Awards</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="achievement">
-              <i class="bi bi-people display-4 text-primary"></i>
-              <h3 class="mt-3">50+</h3>
-              <p>Team Members</p>
-            </div>
-          </div>
+          @include("layouts.parts.achievement", [
+            "icon" => "bi bi-trophy display-4 text-primary",
+            "number" => "500+",
+            "paragraph" => "Happy Clients"
+          ])
+          @include("layouts.parts.achievement", [
+            "icon" => "bi bi-graph-up display-4 text-primary",
+            "number" => "150%",
+            "paragraph" => "Average ROI"
+          ])
+          @include("layouts.parts.achievement", [
+            "icon" => "bi bi-award display-4 text-primary",
+            "number" => "25+",
+            "paragraph" => "Industry Awards"
+          ])
+          @include("layouts.parts.achievement", [
+            "icon" => "bi bi-people display-4 text-primary",
+            "number" => "50+",
+            "paragraph" => "Team Members"
+          ])
         </div>
       </div>
     </section>

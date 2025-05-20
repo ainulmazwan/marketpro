@@ -210,45 +210,21 @@
       <div class="container">
         <h2 class="text-center mb-5">Client Testimonials</h2>
         <div class="row">
-          <div class="col-md-4">
-            <div class="card border-0 h-100">
-              <div class="card-body text-center">
-                <i class="bi bi-quote display-4 text-primary"></i>
-                <p class="mb-3">
-                  "MarketPro transformed our online presence. Their SEO strategy
-                  increased our traffic by 300% in just 6 months."
-                </p>
-                <h5>John Davis</h5>
-                <p class="text-muted">CEO, TechStart Inc.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-0 h-100">
-              <div class="card-body text-center">
-                <i class="bi bi-quote display-4 text-primary"></i>
-                <p class="mb-3">
-                  "The social media campaigns they created were incredible. Our
-                  engagement rates have never been higher."
-                </p>
-                <h5>Maria Garcia</h5>
-                <p class="text-muted">Marketing Director, FoodCo</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-0 h-100">
-              <div class="card-body text-center">
-                <i class="bi bi-quote display-4 text-primary"></i>
-                <p class="mb-3">
-                  "Their PPC management reduced our costs while increasing
-                  conversions. Truly exceptional results."
-                </p>
-                <h5>Robert Chen</h5>
-                <p class="text-muted">Founder, CloudSoft</p>
-              </div>
-            </div>
-          </div>
+          @include("layouts.parts.testimonials", [
+            "testimonial" => '"MarketPro transformed our online presence. Their SEO strategy increased our traffic by 300% in just 6 months."',
+            "name" => "John Davis",
+            "position" => "CEO, TechStart Inc."
+          ])
+          @include("layouts.parts.testimonials", [
+            "testimonial" => '"The social media campaigns they created were incredible. Our engagement rates have never been higher."',
+            "name" => "Maria Garcia",
+            "position" => "Marketing Director, FoodCo"
+          ])
+          @include("layouts.parts.testimonials", [
+            "testimonial" => '"Their PPC management reduced our costs while increasing conversions. Truly exceptional results."',
+            "name" => "Robert Chen",
+            "position" => "Founder, CloudSoft"
+          ])
         </div>
       </div>
     </section>
