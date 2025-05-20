@@ -1,5 +1,9 @@
 @extends("layouts.app")
 
+@include("layouts.parts.nav", [
+    "active" => "about"
+])
+
 @section("content")
     @include("layouts.parts.header", [
         "header" => "About Us",

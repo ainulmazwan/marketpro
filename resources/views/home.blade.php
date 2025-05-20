@@ -1,5 +1,9 @@
 @extends("layouts.app")
 
+@include("layouts.parts.nav", [
+        "active" => "home"
+])
+
 @section("content")
 <!-- Hero Section -->
     <section class="hero-section text-white text-center py-5">
@@ -43,6 +47,7 @@
     @include("layouts.parts.cta", [
         "header" => "Ready to Grow Your Business?",
         "paragraph" => "Let's discuss how we can help you achieve your marketing goals.",
-        "button" => "Contact Us Today"
+        "button" => "Contact Us Today",
+        "buttonurl" => "/contact"
     ])
 @endsection

@@ -551,8 +551,13 @@ footer a:hover {
 /* CTA Sections */
 .bg-primary {
     background: var(--primary-gradient) !important;
-    position: relative;
+    position: relative !important;
     overflow: hidden;
+}
+
+.bg-primary .container {
+    position: relative;
+    z-index: 10;
 }
 
 .bg-primary::before {

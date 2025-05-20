@@ -1,5 +1,9 @@
 @extends("layouts.app")
 
+@include("layouts.parts.nav", [
+        "active" => "portfolio"
+])
+
 @section("content") 
     @include("layouts.parts.header", [
         "header" => "Our Portfolio",

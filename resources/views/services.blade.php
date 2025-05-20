@@ -1,6 +1,11 @@
 @extends("layouts.app")
 
+@include("layouts.parts.nav", [
+        "active" => "services"
+])
+
 @section("content")
+
     @include("layouts.parts.header", [
         "header" => "Our Services",
         "paragraph" => "Comprehensive Digital Marketing Solutions"
