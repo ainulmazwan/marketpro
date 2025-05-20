@@ -1,13 +1,10 @@
 @extends("layouts.app")
 
 @section("content")
-<!-- Page Header -->
-    <section class="page-header text-white text-center py-5">
-      <div class="container">
-        <h1 class="display-4 fw-bold">Our Services</h1>
-        <p class="lead">Comprehensive Digital Marketing Solutions</p>
-      </div>
-    </section>
+    @include("layouts.parts.header", [
+        "header" => "Our Services",
+        "paragraph" => "Comprehensive Digital Marketing Solutions"
+    ])
 
     <!-- Services Section -->
     <section class="py-5">
