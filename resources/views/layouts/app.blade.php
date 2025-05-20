@@ -18,7 +18,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">MarketPro Agency</a>
+        <a class="navbar-brand fw-bold" href="/">MarketPro Agency</a>
         <button
           class="navbar-toggler"
           type="button"
